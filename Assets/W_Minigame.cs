@@ -30,7 +30,7 @@ public class W_Minigame : MonoBehaviour
     }
     private void Update()
     {
-        waitTime -= Time.deltaTime;
+        //waitTime -= Time.deltaTime;
     }
     private IEnumerator RandomButton()
     {

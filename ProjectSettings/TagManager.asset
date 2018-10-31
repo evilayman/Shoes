@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - projectile
-  - FxTemporaire
-  - Craftable
-=======
-  - Stampable
->>>>>>> 30c9478f3ed0fe8737de2e0cee7e7192523e1088
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
