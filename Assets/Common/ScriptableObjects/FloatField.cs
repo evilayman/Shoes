@@ -21,8 +21,10 @@ namespace Kandooz
             {
                 if (Mathf.Abs(value - this.value) > 0.0001)
                 {
-                    
-                    OnValueChanged?.Invoke(value);
+
+                    //OnValueChanged?.Invoke(value);
+                    if (OnValueChanged != null)
+                        OnValueChanged(value);
                     this.value = value;
 
                 }
