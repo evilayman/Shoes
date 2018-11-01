@@ -9,7 +9,7 @@ public class StampScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Stampable")
+        if (other.tag == "Stampable"|| other.CompareTag("Stan"))
         {
             Stamp();
         }
@@ -21,8 +21,9 @@ public class StampScript : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit))
         {
-            if(hit.collider.tag == "Stampable")
+            if(hit.collider.tag == "Stampable" || hit.collider.CompareTag("Stan"))
             {
+                hit.collider.tag = "Stan";
                 GameObject GO = Instantiate(SignPrefab, hit.point, Quaternion.identity, hit.transform);
                 GO.transform.forward = hit.normal * -1;
             }
