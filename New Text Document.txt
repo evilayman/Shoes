@@ -1,0 +1,16 @@
+using UnityEngine;
+using Valve.VR.InteractionSystem;
+
+[RequireComponent(typeof(Interactable))]
+public class RotableObject : MonoBehaviour
+{
+
+    private void HandHoverUpdate(Hand hand)
+    {
+        var type = hand.GetGrabStarting(GrabTypes.Any);
+        if (type != GrabTypes.None)
+        {
+           ////
+        }
+
+    }
