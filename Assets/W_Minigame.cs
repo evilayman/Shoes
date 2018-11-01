@@ -63,7 +63,7 @@ public class W_Minigame : MonoBehaviour
         }
         else
         {
-            if (scoreValue.Value >0)
+            if (scoreValue.Value > 0)
             {
                 scoreValue.Value -= 1;
             }
